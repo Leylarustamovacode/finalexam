@@ -1,0 +1,283 @@
+.hero {
+  max-width: 100%;
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  .text-box {
+    line-height: 3rem;
+    width: 50%;
+    text-align: center;
+    h1 {
+      font-size: 70px;
+      font-weight: 800;
+    }
+    h5 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 40px;
+      font-weight: 700;
+    }
+    button {
+      margin: 50px 10px;
+      padding: 15px 40px;
+      border-color: #207dff;
+    }
+  }
+  .image-box {
+    width: 30%;
+    height: 80%;
+    img {
+      width: 100%;
+      height: 90vh;
+    }
+  }
+}
+.myproducts {
+  max-width: 100%;
+  width: 100%;
+  min-height: 10vh;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  .box {
+    width: 33%;
+    border: 1px solid rgba(128, 128, 128, 0.205);
+    height: 90%;
+    text-align: center;
+    line-height: 2rem;
+    p {
+      opacity: 0.6;
+    }
+    h5 {
+      font-size: 30px;
+    }
+    img {
+      height: 70%;
+      width: 80%;
+    }
+  }
+}
+
+.jacket {
+  background-color: #f9f9f9;
+  max-width: 100%;
+  padding-top: 80px;
+  min-height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  .image {
+    max-width: 50%;
+    height: 80%;
+    img {
+      padding-left: 200px;
+      width: 100%;
+      height: 60vh;
+    }
+  }
+  .text {
+    line-height: 4rem;
+    max-width: 50%;
+    text-align: center;
+    h1 {
+      font-size: 90px;
+    }
+
+    button {
+      color: white;
+      background-color: black;
+      padding: 12px 30px;
+    }
+  }
+}
+
+.collections {
+  max-width: 100%;
+  min-height: 90vh;
+  p {
+    text-align: center;
+  }
+  .boxes {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    .box {
+      width: 30%;
+      height: 50%;
+      border: 1px solid rgba(128, 128, 128, 0.321);
+      margin: 20px;
+      img {
+        width: 80%;
+        height: 50%;
+      }
+      text-align: center;
+      line-height: 2rem;
+      h1 {
+        font-weight: 400;
+        font-size: 25px;
+      }
+      h5 {
+        color: grey;
+        font-size: 15px;
+        font-weight: 400;
+      }
+      p {
+        font-size: 25px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.coat {
+  background-color: #f9f9f9;
+  max-width: 100%;
+  padding-top: 80px;
+  min-height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  .image {
+    max-width: 50%;
+    height: 80%;
+    img {
+      padding-left: 150px;
+      width: 100%;
+      height: 60vh;
+    }
+  }
+  .text {
+    line-height: 5rem;
+    max-width: 50%;
+    text-align: center;
+    h1 {
+      font-size: 90px;
+    }
+
+    button {
+      color: white;
+      background-color: black;
+      padding: 12px 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    .text-box {
+      width: 100%;
+    }
+    .image-box {
+      width: 100%;
+      height: 50%;
+      img {
+        height: 50vh;
+      }
+    }
+  }
+
+  .myproducts {
+    .box {
+      width: 50%;
+    }
+  }
+  .jacket {
+    
+    .image {
+      img {
+        padding-left: 0px;
+        width: 100%;
+        min-height: 60vh;
+      }
+      max-width: 100%;
+    }
+    .text {
+      max-width: 100%;
+    }
+  }
+  .collections {
+    .boxes {
+      width: 100%;
+      .box{
+        width: 100%;
+      }
+    }
+  }
+  .coat {
+    .image {
+      img {
+        padding-left: 0px;
+        width: 100%;
+        height: 60vh;
+      }
+      max-width: 100%;
+    }
+    .text {
+      max-width: 100%;
+    }
+  }
+}
+@media (min-width:480px) and (max-width:1000px) {
+  .hero {
+    .text-box {
+      width: 100%;
+    }
+    .image-box {
+      width: 90%;
+      height: 50%;
+      img {
+        height: 50vh;
+      }
+    }
+  }
+
+  .myproducts {
+    .box {
+      width: 50%;
+    }
+  }
+  .jacket {
+    .image {
+      img {
+        padding-left: 0px;
+        width: 100%;
+        height: 60vh;
+      }
+      max-width: 100%;
+    }
+    .text {
+      max-width: 100%;
+    }
+  }
+  .collections {
+    .boxes {
+      width: 100%;
+      .box{
+        width: 45%;
+      }
+    }
+  }
+  .coat {
+    .image {
+      img {
+        padding-left: 0px;
+        width: 100%;
+        height: 60vh;
+      }
+      max-width: 100%;
+    }
+    .text {
+      max-width: 100%;
+    }
+  }
+}
